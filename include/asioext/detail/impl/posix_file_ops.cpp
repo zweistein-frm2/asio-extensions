@@ -162,7 +162,7 @@ file_attrs native_to_file_attrs(uint32_t native) ASIOEXT_NOEXCEPT
 # define ASIOEXT_BIRTHTIME_NANOSECONDS 0
 #endif
 
-bool stat_to_times(const struct stat& st,
+inline bool stat_to_times(const struct stat& st,
                    file_time_type& ctime, file_time_type& atime,
                    file_time_type& mtime) ASIOEXT_NOEXCEPT
 {
